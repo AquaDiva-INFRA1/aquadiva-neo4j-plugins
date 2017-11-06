@@ -1,0 +1,4 @@
+./runResourceTools.sh -ti /data/data_resources/biology/BioPortal/classes/
+./runResourceTools.sh -mi /data/data_resources/biology/BioPortal/mappings/
+./runResourceTools.sh -ca
+./runResourceTools.sh -cap

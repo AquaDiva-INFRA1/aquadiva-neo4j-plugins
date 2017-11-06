@@ -1,0 +1,2 @@
+aggElementMapping: curl -XPOST "http://localhost:7474/db/data/ext/AquaDivaExport/graphdb/aggregate_element_mapping" | sed 's/^"//;s/"$//' | base64 -d | gunzip
+wörterbuch: curl -XPOST "http://localhost:7474/db/data/ext/AquaDivaExport/graphdb/aquadiva_lingpipe_dictionary" | sed 's/^"//;s/"$//' | base64 -d | gunzip | sort -u > bioportalTerms.dict
