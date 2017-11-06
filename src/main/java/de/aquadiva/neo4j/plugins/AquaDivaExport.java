@@ -158,7 +158,7 @@ public class AquaDivaExport extends ServerPlugin {
 	}
 
 	@Name(AGGR_ELEMENT_MAPPING)
-	@Description("Creates an ID mapping file from aggregate IDs to the IDs of their elements. For the elements, the ID property may be specified. For the aggregates, the default ID property is used.")
+	@Description("Creates a GZIPed and base64-encoded ID mapping file from aggregate IDs to the IDs of their elements. For the elements, the ID property may be specified. For the aggregates, the default ID property is used.")
 	@PluginTarget(GraphDatabaseService.class)
 	public String exportAggregateElementMapping(@Source GraphDatabaseService graphDb) throws Exception {
 		ByteArrayOutputStream baos = new ByteArrayOutputStream(Export.OUTPUTSTREAM_INIT_SIZE);
